@@ -1,128 +1,136 @@
 
 
-	/* page default */
-		body{
-			margin: 0px;
-		}
 
+	/* Page Default */
+	body{
+		margin: 0px;
+		font-family: "Papyrus",serif;
+	}
+	#top,
+	#bottom{
+		display: block;
+		visibility: hidden;
+		background-color: black;
+		width: 100%;
+		height: 1px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-	/* page top&bottom */
-		#top,
-		#bottom{
-			display: block;
-			visibility: hidden;
-			background-color: black;
-			width: 100%;
-			height: 1px;
-			margin-top: 0px;
-			margin-bottom: 0px;
-		}
+	/* Page Menubar */
+	.menubar{
+		display: block;
+		position: fixed;
+		text-align: right;
+		/*background-color: royalblue;*/
+		width: 100%;
+		margin-top: 0px;
+		/*box-shadow: 1px 1px 1px black;*/
+	}
+	.ahref{
+		display: inline-block;
+		text-align: center;
+		/*background-color: aliceblue;*/
+		width: px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 0px;
+		margin-right: 30px;
+		font-size: 27px;
+	}
 
+	/* Page List */
+	.mother-menu,
+	.mother-ym{
+		display: block;
+		position: fixed;
+		text-align: center;
+		background-color: aliceblue;
+		width: 100%;
+		padding: 0px;
+		margin-top: 0px;
+		font-family: serif;
+	}
+	#check01,#close01,
+	#check02,#close02{
+		display: none;
+	}
+	#open01:hover,
+	#open02:hover,
+	.click-menu:hover,
+	.click-ym:hover{
+		opacity: 0.5;
+	}
+	#close01,
+	#close02,
+	nav{
+		position: fixed;
+		text-align: left;
+		left: 0px;
+		top: 0px;
+		height: 100%;
+	}
+	#close01,
+	#close02{
+		z-index: 2;
+		width: 100%;
+		opacity: 0.8;
+		transition: 0.5s;
+	}
+	.list-menu{
+		z-index: 3;
+		background-color: rgba(240, 248, 255, 1);
+		width: 300px;
+		margin-left: 15px;
+		transition: 0.5s;
+		transform: translateX(-315px);
+	}
+	.list-ym{
+		z-index: 3;
+		text-align: center;
+		/*background-color: rgba(245, 245, 245, 0.5);*/
+		width: 100%;
+		height: 100%;
+		transition: 1s;
+		transform: translateY(100%);
+	}
+	.choice{
+		display: inline-block;
+		text-align: center;
+		/*background-color: royalblue;*/
+		padding: 15px;
+		margin-top: 250px;
+		border-radius: 15px;
+	}
+	.click-menu,
+	.click-ym{
+		display: block;
+		font-family: serif;
+		text-decoration: none;
+		color: black;
+	}
+	.click-menu:link,.click-menu:visited,
+	.click-ym:link,.click-ym:visited,{
+		color: black;
+	}
+	.click-menu{
+		/*background-color: royalblue;*/
+		margin-top: 35px;
+		margin-left: 30px;
+		font-size: 22px;
+	}
+	.click-ym{
+		/*background-color: aliceblue;*/
+		margin-top: 20px;
+		font-size: 22px;
+		color: black;
+	}
+	#check01:checked ~ #close01,
+	#check02:checked ~ #close02{
+		display: block;
+	}
 
-	/* list */
-		.cushion-menu,
-		.cushion-ym{
-			display: block;
-			width: 100%;
-			text-align: right;
-			position: fixed;
-			/*background-color: royalblue;*/
-			margin-top: 0px;
-			padding: 0px;
-			margin: 0px;
-			font-family: serif;
-		}
-
-		#check01,#close01,
-		#check02,#close02{
-			display: none;
-		}
-
-		.menubar{
-			display: block;
-			position: fixed;
-			text-align: right;
-			background-color: aliceblue;
-		}
-
-		#open01:hover,
-		#open02:hover,
-		#close02-sp:hover{
-			opacity: 0.5;
-		}
-
-		#close01,
-		#close02,
-		nav{
-			position: fixed;
-			text-align: left;
-			left: 0px;
-			top: 0px;
-			height: 100%;
-		}
-
-		#close01,
-		#close02{
-			z-index: 2;
-			background-color: gray;
-			width: 100%;
-			/*opacity: 0.8;*/
-			transition: 0.5s;
-		}
-
-		nav{
-			text-align: left;
-		}
-
-		.list-menu{
-			z-index: 3;
-			background-color: rgba(240, 248, 255, 1);
-			width: 300px;
-			margin-left: 15px;
-			transition: 0.5s;
-			transform: translateX(-315px);
-		}
-
-		.list-ym{
-			z-index: 3;
-			background-color: white;
-			width: 100%;
-			height: 100%;
-			transition: 1.5s;
-			transform: translateY(100%);
-		}
-
-		#check01:checked ~ #close01,
-		#check02:checked ~ #close02{
-			display: block;
-		}
-
-		#check01:checked ~ nav,
-		#check02:checked ~ nav{
-			transform: translateX(0);
-		}
-
-		.koumoku{
-			margin-left: 30px;
-		}
-		#close02-sp{
-			margin-left: 50px;
-		}
-
-
-	/* menubar */
-		.menubar{
-			display: block;
-			position: fixed;
-			text-align: right;
-			background-color: royalblue;
-			width: 100%;
-		}
-		.ahref{
-			display: inline-block;
-			background-color: aliceblue;
-			padding: 5px;
-			margin: 5px;
-			margin-right: 40px;
-			border-radius: 10px;
-		}
+	#check01:checked ~ nav,
+	#check02:checked ~ nav{
+		transform: translateX(0);
+	}

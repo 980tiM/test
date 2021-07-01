@@ -22,10 +22,9 @@
 		display: block;
 		position: fixed;
 		text-align: right;
-		/*background-color: royalblue;*/
+		background-color: rgba(230, 230, 250, 0.8);
 		width: 100%;
 		margin-top: 0px;
-		/*box-shadow: 1px 1px 1px black;*/
 	}
 	.ahref{
 		display: inline-block;
@@ -80,6 +79,7 @@
 	.list-menu{
 		z-index: 3;
 		background-color: rgba(240, 248, 255, 1);
+		background-color: lavender;
 		width: 300px;
 		margin-left: 15px;
 		transition: 0.5s;
@@ -97,10 +97,14 @@
 	.choice{
 		display: inline-block;
 		text-align: center;
-		/*background-color: royalblue;*/
-		padding: 15px;
-		margin-top: 250px;
+		background-color: lavender;
+		padding-top: 45px;
+		padding-bottom: 60px;
+		padding-left: 60px;
+		padding-right: 60px;
+		margin-top: 150px;
 		border-radius: 15px;
+		box-shadow: 1px 1px 2px black;
 	}
 	.click-menu,
 	.click-ym{
@@ -133,4 +137,59 @@
 	#check01:checked ~ nav,
 	#check02:checked ~ nav{
 		transform: translateX(0);
+	}
+
+	/* Page Decoration */
+	.tweet-log{
+		display: block;
+		text-align: center;
+		/*background-color: salmon;*/
+		margin-top: 150px;
+		margin-bottom: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 100px;
+		font-family: serif;
+		text-shadow: 1px 1px 2px black;
+	}
+	.blue{
+		color: rgba(65, 105, 225, 1);
+	}
+	.yer-month{
+		display: block;
+		text-align: center;
+		/*background-color: blue;*/
+		margin-top: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 16px;
+		font-family: serif;
+	}
+	.yer{
+		font-size: 50px;
+	}
+	.month{
+		font-size: 100px;
+		color: rgba(48, 123, 96, 1);
+		text-shadow: 1px 1px 1px black;
+	}
+
+	/* Tweet Decoration */
+	.mainground{
+		display: block;
+		text-align: center;
+		/*background-color: blue;*/
+		width: 850px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tweet{
+		display: inline-block;
+		vertical-align: top;
+		/*background-color: blue;*/
+		width: 250px;
+		padding-top: 0px;
+		padding-bottom: 50px;
+		margin-left: 15px;
+		margin-right: 15px;
 	}
